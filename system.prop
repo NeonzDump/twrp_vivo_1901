@@ -7,4 +7,3 @@ ro.sys.usb.storage.type=mtp
 ro.treble.enabled=true
 ro.mediatek.platform=MT6765
 ro.hardware=mt6765
-ro.boot.dynamic_partitions=true

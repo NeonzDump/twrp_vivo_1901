@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="garden"
+FDEVICE="1901"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -45,7 +45,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/bootdevice/by-name/boot"
 
 	# Alternate Codenames
-	export TARGET_DEVICE_ALT="dandelion,angelica,angelican,angelicain,cattail"
+	export TARGET_DEVICE_ALT="1901,PD1901,PD1901_2"
 
 	export OF_USE_GREEN_LED=0
 	export OF_HIDE_NOTCH=1
@@ -69,7 +69,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# R11.1 Settings
 	export FOX_VERSION="R11.1_1"
 	export FOX_BUILD_TYPE="Beta"
-	export OF_MAINTAINER="Sushrut1101"
+	export OF_MAINTAINER="NeonzGamingYT"
 
 	# OTA
 	export OF_KEEP_DM_VERITY=1

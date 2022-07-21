@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),garden)
+ifeq ($(TARGET_DEVICE),1901)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

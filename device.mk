@@ -14,13 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/garden
-
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+LOCAL_PATH := device/vivo/1901
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -36,8 +30,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.gatekeeper@1.0-impl
 
 PRODUCT_COPY_FILES += \
-	$(OUT_DIR)/target/product/garden/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service \
-	$(OUT_DIR)/target/product/garden/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
+	$(OUT_DIR)/target/product/vivo/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service \
+	$(OUT_DIR)/target/product/vivo/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
